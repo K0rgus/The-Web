@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>The Web Magic Items</name>
+		<description>Magic Items from The Web campaign.</description>
+		<update version="0.1">
+			<file name="the-web.index" url="" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/dungeon-masters-guide/source.xml" />
+	</files>
+</index>
