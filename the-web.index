@@ -4,7 +4,7 @@
 		<name>The Web Magic Items</name>
 		<description>Magic Items from The Web campaign.</description>
 		<update version="0.1">
-			<file name="the-web.index" url="" />
+			<file name="the-web.index" url="https://raw.githubusercontent.com/K0rgus/The-Web/main/the-web.index" />
 		</update>
 	</info>
 	<files>
