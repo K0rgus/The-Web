@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of the Cobalt Soul</name>
+		<description>The Way of the Cobalt Soul archetype from the Tal’Dorei Campaign Setting.</description>
+		<author url="https://geekandsundry.com/shows/critical-role/">Tal’Dorei Campaign Setting</author>
+		<update version="0.0.3">
+			<file name="monk-cobaltsoul.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/third-party/critical-role/classes/monk-cobaltsoul.xml" />
+		</update>
+	</info>
+
+	<element name="Way of the Cobalt Soul" type="Archetype" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_MONK_WAY_OF_THE_COBALT_SOUL">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Driven by the pursuit of knowledge and their worship of the Knowing Mistress, the monastery of the Cobalt Soul (known as the library of the Cobalt Reserve) stands as one of the most well-respected and most heavily guarded repository of tomes, history, and information across Exandria. Here, young people seeking the clarity of truth and the strength of knowledge pledge to learn the arts of seeking enlightenment by understanding the world around them, and mastering the techniques to defend it. To become a Cobalt Soul is to give one’s self to the quest for unveiling life’s mysteries, bringing light to the secrets of the dark, and guarding the most powerful and dangerous of truths from those who would seek to pervert the sanctity of civilization.</p>
+			<p class="indent">The monks of the Cobalt Soul are the embodiment of the phrase “know your enemy”. Through research, they prepare themselves against the ever-coming tides of evil. Through careful training, they have learned to puncture and manipulate the spiritual flow of an opponent’s body. Through understanding the secrets of their foe, they can adapt and surmount them. Then, once the fight is done, they return to record their findings for future generations of monks to study from.</p>
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MYSTICAL_ERUDITION" />
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTRACT_ASPECTS" />
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTORT_TRUTH" />
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MIND_OF_MERCURY" />
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_PRETERNATURAL_COUNTER" />
+			<div element="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_DEBILITATING_BARAGE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTRACT_ASPECTS" level="3" />
+			<grant type="Archetype Feature" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTORT_TRUTH" level="6" />
+      <grant type="Archetype Feature" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MYSTICAL_ERUDITION" level="6" />
+			<grant type="Archetype Feature" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MIND_OF_MERCURY" level="11" />
+			<grant type="Archetype Feature" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_DEBILITATING_BARAGE" level="17" />
+		</rules>
+	</element>
+	<element name="Extract Aspects" type="Archetype Feature" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTRACT_ASPECTS">
+		<description>
+			<p>Beginning at 3rd level when choosing this tradition, you can strike pressure points to extract crucial information about your foe, granting you insight about their combat ability. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you mark them as analyzed. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed melee attack against that creature. This benefit lasts until you finish a short or long rest.</p>
+			<p class="indent">In addition, you learn the following attributes about the target: Damage Vulnerabilities, Damage Resistances, Damage Immunities, and Condition Immunities.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with one of the attacks granted by your Flurry of Blows, you mark them as analyzed. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed melee attack against that creature. This benefit lasts until you finish a short or long rest. In addition, you learn the following attributes about the target: Damage Vulnerabilities, Damage Resistances, Damage Immunities, and Condition Immunities.</description>
+		</sheet>
+	</element>
+	<element name="Extort Truth" type="Archetype Feature" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_EXTORT_TRUTH">
+		<description>
+			<p>At 6th level, you can hit a hidden cluster of nerves on a creature with precision, temporarily causing them to become mentally malleable. If you hit a creature with an unarmed attack, you can spend 1 ki point to force them to make a Charisma saving throw. On a failed save, the creature is unable to speak a deliberate lie and all Charisma checks directed at the creature are made with advantage for up to 10 minutes. You know if they succeeded or failed on their saving throw.</p>
+			<p class="indent">An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as the effect lasts.</p>
+		</description>
+		<sheet>
+			<description>If you hit a creature with an unarmed attack, you can spend 1 ki point to force them to make a Charisma saving throw. On a failed save, the creature is unable to speak a deliberate lie and all Charisma checks directed at the creature are made with advantage for up to 10 minutes. You know if they succeeded or failed on their saving throw. They are aware of the effect and can dodge questions. </description>
+		</sheet>
+    </element>
+  	<element name="Mystical Erudition" type="Archetype Feature" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MYSTICAL_ERUDITION">
+		<description>
+			<p>Beginning at 6th level, you’ve undergone extensive training with the Cobalt Soul, teaching you extensively in history or lore from the monastery’s collected volumes. You learn one language of your choice, and you gain proficiency with one of the following skills of your choice: Arcana, History, Investigation, Nature, and Religion. If you already have proficiency in one of the listed skills, you can instead choose to double your proficiency bonus for any ability check you make that uses the chosen proficiency.</p>
+			<p class="indent">You gain an additional language and an additional skill proficiency (with the ability to double the bonus of an existing proficiency) at 11th and 17th level.</p>
+		</description>
+		<sheet>
+			<description>Spend 1 ki point to gain advantage on an Arcana, History, or Religion check.</description>
+		</sheet>
+		<rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<select type="Language" name="Language (Cobalt Soul)" supports="Standard||Exotic||Secret" level="3" />
+			<select type="Language" name="Language (Cobalt Soul)" supports="Standard||Exotic||Secret" level="11" />
+			<select type="Language" name="Language (Cobalt Soul)" supports="Standard||Exotic||Secret" level="17" />
+		</rules>
+	</element>
+	<element name="Mind of Mercury" type="Archetype Feature" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_MIND_OF_MERCURY">
+		<description>
+			<p>Starting at 11th level, you’ve honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you’ve already taken your reaction, you may spend 1 ki point to take an additional reaction.</p>
+		</description>
+		<sheet>
+			<description>Once per turn, if you’ve already taken your reaction, you may spend 1 ki point to take an additional reaction.</description>
+		</sheet>
+	</element>
+	<element name="Debilitating Barage" type="Archetype Feature" source="Critical Role: Tal’Dorei Campaign Setting" id="ID_CRIT_TCS_ARCHETYPE_FEATURE_COBALT_SOUL_DEBILITATING_BARAGE">
+		<description>
+			<p>Upon reaching 17th level, you’ve gained the knowledge to temporarily lower a creature’s fortitude by striking a series of pressure points. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can spend 3 ki points to cause the creature to suffer a vulnerability to a damage type of your choice for 1 minute, or until they take damage of that type. A creature who is affected by this feature cannot be affected by it again for 24 hours.</p> 
+		</description>
+		<sheet>
+			<description>Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can spend 3 ki points to cause the creature to suffer a vulnerability to a damage type of your choice for 1 minute, or until they take damage of that type. A creature who is affected by this feature cannot be affected by it again for 24 hours.</description>
+		</sheet>
+	</element>
+</elements>
